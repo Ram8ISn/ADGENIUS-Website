@@ -1,0 +1,59 @@
+body { font-family: Arial, sans-serif; }
+.hero {
+ height: 69vh;
+ min-height:360px;
+ justify-content: center;
+ padding-top: 80px;
+ display:flex;
+ align-items:center;
+ background: linear-gradient(#0008,#0008), url('../assets/img/1.svg') center/cover;
+ background-color:#0b4f6c;
+ background-size:cover;
+}
+.hero .container {
+ padding: 10rem 1rem 3rem;
+}
+.hero .display-4 { color: #fff; font-weight:700;  }
+.hero .lead { color: #f3f6f8; }
+.card {
+ border-radius: 10px;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ transition: .3s;
+}
+
+.card:hover {
+ transform: translateY(-5px);
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 120px; 
+    height: 70vh;      
+  }
+}
+@media (max-width: 991px) {
+	.hero { height: 55vh; }
+	.hero .display-4 { font-size: 2.25rem; }
+}
+@media (max-width: 575px) {
+	.hero { height: 455vh; }
+	.hero .display-4 { font-size: 1.6rem; }
+	.hero .lead { font-size: 0.95rem; }
+	.card { padding: 1rem; }
+}
+.card {
+ border-radius: 10px;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+ font-size: 14px;
+}
+
+img {
+ border-radius: 8px;
+}
+.navbar {
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+}
